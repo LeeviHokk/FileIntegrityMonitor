@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+</head>
+<body>
+    <div id="main-container">
+        <span id="message_id">Welcome</span>
+        <hr>
+        <div id="JSON_options">
+            <label style="min-width: 120px;">Enter JSON: </label>
+            <input type="text" id="jsonSearch" placeholder="Enter JSON path">
+            <button type="submit" style="min-width: 80px; margin-left: 30px;" id="JSON_button">Add &plus;</button>
+        </div>
+        <div>
+            <label style="min-width: 120px;">Enter folder: </label>
+            <input type="text" id="folderSearch" placeholder="Enter folder path">
+            <button type="submit" style="min-width: 80px; margin-left: 30px;" id="folder_button">Add &plus;</button>
+        </div>
+        <div>
+            <label style="min-width: 120px;">Save as: </label>
+            <input type="text" id="jsonSave" placeholder="Enter file name">
+            <button type="submit" style="min-width: 80px; margin-left: 30px;" id="save_button">Add &plus;</button>
+        </div>
+        <div id="hash_container">
+            <table class="table">
+                <thead id="table_heading">
+                    <tr>
+                        <th>Name</th>
+                        <th>Hash</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/eel.js" ></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

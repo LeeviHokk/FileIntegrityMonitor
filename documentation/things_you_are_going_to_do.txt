@@ -1,0 +1,9 @@
+- File integrity monitor
+
+- Uses Python (most likely)
+
+- It monitors the files in given directories by monitoring their hash-values. If changes are spotted, the user is informed of the change in real-time.
+
+- Will have a UI, however, will at the very least work on command line. Depends on, whether I have the time.
+
+- Can be used to assure that the files have not been maliciously modified or damaged.
