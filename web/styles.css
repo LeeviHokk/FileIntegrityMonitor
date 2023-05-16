@@ -1,0 +1,47 @@
+
+header {
+    width: 100%;
+    height: 20%;
+    min-width: 300px;
+    text-align: left;
+}
+
+.container {
+    height: 80%;
+}
+
+th {
+    font-weight: bold;
+    font-size: large;
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+}
+
+td {
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+}
+
+#inputFields {
+    height: 20%;
+}
+
+.table {
+    overflow-y: scroll;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.New {
+    background-color:yellowgreen;
+}
+
+.Modified {
+    background-color:burlywood;
+}
+
+.Missing {
+    background-color:salmon;
+}

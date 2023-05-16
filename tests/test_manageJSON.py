@@ -54,7 +54,7 @@ def test_compareJSON_2():
                                               {"file1" : "2efrgsres",
                                                 "file2" : "sdfjf",
                                                 "folder_69" : "folder"})
-    assert missing == None and modified == None, new == None
+    assert missing == [] and modified == [], new == []
     
 def test_deleteFolderJSON():
     """Normal case"""

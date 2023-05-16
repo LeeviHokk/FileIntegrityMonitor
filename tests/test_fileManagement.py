@@ -22,3 +22,13 @@ def test_load_folder_2():
     """Invalid Case"""
     dictionary = fileManagement.load_folder("thisDoesNotExist")
     assert len(dictionary) == 0
+
+def test_load_folder_2():
+    """Invalid Case"""
+    dictionary = fileManagement.load_folder("thisDoesNotExist")
+    assert len(dictionary) == 0
+
+def test_load_folder_3():
+    """Invalid Case"""
+    dictionary = fileManagement.load_folder("file.txt")
+    assert len(dictionary) == 0

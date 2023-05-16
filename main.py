@@ -3,6 +3,8 @@
 """
 
 import eel
+#import tkinter
+#from tkinter import filedialog
 import fileManagement
 import manageJSON
 import json
@@ -18,6 +20,14 @@ def get_folder(path):
     files = fileManagement.load_folder(path)
     return json.dumps(files)
 
+
+"""@eel.expose
+def get_directory():
+
+    tkinter.Tk().withdraw()
+    path = filedialog.askdirectory()
+
+    return path"""
 
 @eel.expose
 def get_history(path):
@@ -37,7 +47,7 @@ def get_difference(path,jsonString):
 
     jsonDict = json.loads(jsonString)
     folder = list(jsonDict.keys())[0]
-    missingFiles, modifiedFiles, newFiles = manageJSON.compareJSON(path,folder,jsonDict)
+    missingFiles, modifiedFiles, newFiles = manageJSON.compareJSON(path,folder,jsonDict[folder])
     dictionary = {"missing" : missingFiles,
                   "modified" : modifiedFiles,
                   "new" : newFiles}
